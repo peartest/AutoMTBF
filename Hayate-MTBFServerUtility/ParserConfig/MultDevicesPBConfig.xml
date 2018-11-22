@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Test>
+    <Devices>
+<!--		udid是设备的ID，value是测试的持续时间，单位是小时 -->
+		<Device udid="6c9a0735" mappingid="demo" logStorePath="Default" model="unit" driverByTime="true" value="12" port="4727" tcp="8998" bootstrapPort="2251">
+            <Scripts>
+                <!--<Script path="scripts\preconditions.py" loop="1"></Script>-->
+                <Script path="scripts\S5_06_001.py" loop="1"></Script>
+                <Script path="scripts\S5_06_002.py" loop="1"></Script>
+                <Script path="scripts\S5_06_003.py" loop="1"></Script>
+                <Script path="scripts\S5_06_004.py" loop="1"></Script>
+                <Script path="scripts\S5_06_005.py" loop="1"></Script>
+                <Script path="scripts\S5_06_006.py" loop="1"></Script>
+                <Script path="scripts\S5_06_007.py" loop="1"></Script>
+                <Script path="scripts\S5_06_008.py" loop="1"></Script>
+                <Script path="scripts\S5_06_009.py" loop="1"></Script>
+                <Script path="scripts\S5_06_010.py" loop="1"></Script>
+                <Script path="scripts\S5_06_011.py" loop="1"></Script>
+                <Script path="scripts\S5_06_012.py" loop="1"></Script>
+                <Script path="scripts\S5_06_013.py" loop="1"></Script>
+                <Script path="scripts\S5_06_014.py" loop="1"></Script>
+                <Script path="scripts\S5_06_015.py" loop="1"></Script>
+                <Script path="scripts\S5_06_016.py" loop="1"></Script>
+                <Script path="scripts\S5_06_017.py" loop="1"></Script>
+                <Script path="scripts\S5_06_018.py" loop="1"></Script>
+                <Script path="scripts\S5_06_019.py" loop="1"></Script>
+                <Script path="scripts\S5_06_020.py" loop="1"></Script>
+                <Script path="scripts\S5_06_021.py" loop="1"></Script>
+                <Script path="scripts\S5_06_022.py" loop="1"></Script>
+                <Script path="scripts\S5_06_023.py" loop="1"></Script>
+                <Script path="scripts\S5_06_024.py" loop="1"></Script>
+                <Script path="scripts\S5_06_025.py" loop="1"></Script>
+                <Script path="scripts\S5_06_026.py" loop="1"></Script>
+                <Script path="scripts\S5_06_027.py" loop="1"></Script>
+                <Script path="scripts\S5_06_028.py" loop="1"></Script>
+                <Script path="scripts\S5_06_029.py" loop="1"></Script>
+                <Script path="scripts\S5_06_030.py" loop="1"></Script>
+                <Script path="scripts\S5_06_032.py" loop="1"></Script>
+                <Script path="scripts\S5_06_033.py" loop="1"></Script>
+                <Script path="scripts\S5_06_034.py" loop="1"></Script>
+                <Script path="scripts\S5_06_035.py" loop="1"></Script>
+                <Script path="scripts\S5_06_036.py" loop="1"></Script>
+                <Script path="scripts\S5_06_037.py" loop="1"></Script>
+                <Script path="scripts\S5_06_038.py" loop="1"></Script>
+                <Script path="scripts\S5_06_039.py" loop="1"></Script>
+                <Script path="scripts\S5_06_040.py" loop="1"></Script>
+                <Script path="scripts\S5_06_041.py" loop="1"></Script>
+                <Script path="scripts\S5_06_042.py" loop="1"></Script>
+                <Script path="scripts\S5_06_043.py" loop="1"></Script>
+
+                <!--<Script path="scripts\S5_06_044.py" loop="1"></Script>-->
+                <!--<Script path="scripts\S5_06_045.py" loop="1"></Script>-->
+
+                <Script path="scripts\S5_06_046.py" loop="1"></Script>
+                <Script path="scripts\S5_06_047.py" loop="1"></Script>
+                <Script path="scripts\S5_06_059.py" loop="1"></Script>
+                <Script path="scripts\S5_06_060.py" loop="1"></Script>
+                <Script path="scripts\S5_06_061.py" loop="1"></Script>
+                <Script path="scripts\S5_06_062.py" loop="1"></Script>
+                <Script path="scripts\S5_06_063.py" loop="1"></Script>
+                <Script path="scripts\S5_06_064.py" loop="1"></Script>
+                <Script path="scripts\S5_06_065.py" loop="1"></Script>
+                <Script path="scripts\S5_06_066.py" loop="1"></Script>
+
+            </Scripts>
+		</Device>
+        <!--<Device udid="5916ae54" mappingid="demo" logStorePath="Default" model="unit" driverByTime="true" value="0.01" port="4728" tcp="8999" bootstrapPort="2252">-->
+            <!--<Scripts>-->
+		        <!--<Script path="scripts\first.py" loop="1"></Script>-->
+            <!--</Scripts>-->
+		<!--</Device>-->
+		<!--<Device udid="724d433" mappingid="HP_11" logStorePath="Default" model="unit" driverByTime="true" value="24" port="4728" tcp="8999" bootstrapPort="2253">-->
+            <!--<Scripts>-->
+				<!--&lt;!&ndash;<Script path="C:\Workspace\HP_Stability\Stress\Stress_10.py" loop="500"></Script>&ndash;&gt;-->
+		        <!--<Script path="C:\Workspace\HP_Stability\LTR\Stability_01.py" loop="20"></Script>-->
+		        <!--<Script path="C:\Workspace\HP_Stability\LTR\Stability_02.py" loop="5"></Script>-->
+		        <!--<Script path="C:\Workspace\HP_Stability\LTR\Stability_03.py" loop="10"></Script>-->
+		        <!--<Script path="C:\Workspace\HP_Stability\LTR\Stability_04.py" loop="5"></Script>-->
+		        <!--<Script path="C:\Workspace\HP_Stability\LTR\Stability_05.py" loop="5"></Script>-->
+		        <!--<Script path="C:\Workspace\HP_Stability\LTR\Stability_06.py" loop="5"></Script>-->
+		        <!--<Script path="C:\Workspace\HP_Stability\LTR\Stability_07.py" loop="5"></Script>-->
+		        <!--<Script path="C:\Workspace\HP_Stability\LTR\Stability_08.py" loop="5"></Script>-->
+		        <!--<Script path="C:\Workspace\HP_Stability\LTR\Stability_09.py" loop="5"></Script>-->
+		        <!--<Script path="C:\Workspace\HP_Stability\LTR\Stability_10.py" loop="2"></Script>-->
+		        <!--<Script path="C:\Workspace\HP_Stability\LTR\Stability_11.py" loop="2"></Script>-->
+		        <!--<Script path="C:\Workspace\HP_Stability\LTR\Stability_12.py" loop="5"></Script>-->
+		        <!--<Script path="C:\Workspace\HP_Stability\LTR\Stability_13.py" loop="5"></Script>-->
+		        <!--<Script path="C:\Workspace\HP_Stability\LTR\Stability_14.py" loop="5"></Script>-->
+		        <!--<Script path="C:\Workspace\HP_Stability\LTR\Stability_15.py" loop="2"></Script>-->
+		        <!--<Script path="C:\Workspace\HP_Stability\LTR\Stability_16.py" loop="5"></Script>-->
+		        <!--<Script path="C:\Workspace\HP_Stability\LTR\Stability_18.py" loop="20"></Script>-->
+		        <!--<Script path="C:\Workspace\HP_Stability\LTR\Stability_19.py" loop="20"></Script>-->
+		        <!--<Script path="C:\Workspace\HP_Stability\LTR\Stability_20.py" loop="20"></Script>-->
+            <!--</Scripts>-->
+		<!--</Device>-->
+   </Devices>
+</Test>

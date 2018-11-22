@@ -1,0 +1,118 @@
+  PID       Vss      Rss      Pss      Uss     Swap    PSwap    USwap    ZSwap  cmdline
+ 1224  1229748K   85560K   47527K   41252K    6176K    2543K    2404K     732K  system_server
+ 3141  1267064K   81300K   41986K   35536K   15476K   11352K   10992K    3270K  com.android.systemui
+ 4180  1406572K   65724K   33117K   28616K    7044K    2390K    2196K     688K  com.google.android.gms
+12499  1141008K   68488K   28119K   21988K    5128K    1189K    1060K     342K  com.android.settings
+ 3882  1167228K   56328K   24871K   20720K    5736K    1043K     852K     300K  com.google.android.gms.persistent
+ 3292  1134560K   41776K   20110K   19056K    8572K    3828K    3560K    1102K  com.android.phone
+ 8079  1146260K   44608K   14493K   10984K   10644K    6783K    6548K    1954K  com.android.launcher3
+  966   112440K   15184K   13902K   13848K     344K     344K     344K      99K  /system/vendor/bin/mm-qcamera-daemon
+12588  1116728K   49572K   12519K    8076K    5844K    1747K    1612K     503K  com.google.android.apps.assistant
+ 3122  1128304K   30556K    7569K    6356K   10164K    5490K    5140K    1581K  com.google.android.inputmethod.latin
+ 3926  1090504K   24784K    6387K    5708K    8924K    3613K    3280K    1041K  com.evenwell.OTAUpdate
+10408  1106920K   31316K    5668K    4308K    5672K     682K     472K     196K  com.google.android.setupwizard
+12014  1087540K   31828K    4196K    2532K    5388K     619K     456K     178K  android.process.media
+12312  1103188K   30332K    4079K    2544K    6352K    1294K    1016K     372K  com.google.android.apps.searchlite
+  630    83740K    6984K    3998K    3648K    2064K    2058K    2052K     592K  /system/bin/surfaceflinger
+ 7216  1083032K   21432K    3610K    2956K    5776K     718K     524K     207K  com.evenwell.pandorasbox
+12329  1082108K   26432K    3158K    1968K    5168K     180K       4K      51K  com.evenwell.AprUploadService
+  960    75540K    4784K    2952K    2868K    1416K    1396K    1376K     402K  /vendor/bin/hw/rild
+ 6417  1088600K   19992K    2888K    2268K    6064K    1081K     904K     311K  com.evenwell.nps
+12285  1083088K   24780K    2883K    1816K    5276K     225K      44K      65K  com.google.android.partnersetup
+12441  1081076K   24184K    2813K    1780K    5248K     186K       0K      53K  com.evenwell.healthycare
+ 3258  1090052K   20668K    2759K    2096K    5840K     757K     548K     218K  .dataservices
+ 1024    35488K    4768K    2747K    2624K      52K      52K      52K      14K  /system/vendor/bin/ims_rtp_daemon
+ 6346  1087100K   21308K    2592K    1880K    7292K    2288K    2096K     659K  com.evenwell.batteryprotect
+ 6327  1089972K   21064K    2443K    1736K    6628K    1711K    1540K     493K  com.evenwell.autoregistration
+ 3912  1088072K   19836K    2414K    1748K    7276K    1967K    1692K     566K  com.evenwell.pushagent
+  959    37996K    4408K    2350K    2212K     532K     530K     528K     152K  media.codec
+  605    83760K    4080K    2279K    2132K    4700K    4682K    4664K    1349K  /vendor/bin/hw/hal-server
+ 7234  1087252K   21504K    2255K    1508K    6400K    1466K    1296K     422K  com.evenwell.stbmonitor
+ 3627  1084096K   19196K    2168K    1572K    6184K     874K     620K     251K  com.qualcomm.qcrilmsgtunnel
+  921    57196K    4240K    2080K    1900K     924K     918K     912K     264K  media.extractor
+ 6506  1082392K   18012K    1907K    1364K    5616K     510K     320K     147K  com.evenwell.weatherservice
+  887    55764K    3848K    1890K    1640K    1924K    1904K    1884K     548K  /system/bin/audioserver
+ 3274  1083188K   19156K    1886K    1268K    6256K    1124K     896K     324K  com.qualcomm.qti.telephonyservice
+12293  1084596K   26760K    1877K     568K    8384K    3305K    2980K     952K  com.evenwell.UsageStatsLogReceiver
+ 6562  1092600K   19716K    1875K    1204K    5864K     874K     676K     251K  com.google.process.gservices
+ 5466  1082104K   17572K    1851K    1336K    5628K     502K     308K     144K  com.evenwell.gmspartner
+  889    24436K    3380K    1765K    1712K      64K      64K      64K      18K  /system/bin/drmserver
+  958    29816K    3224K    1735K    1668K     204K     204K     204K      58K  /vendor/bin/hw/android.hardware.gnss@1.0-service-qti
+ 6063  1082436K   17452K    1681K    1148K    5852K     728K     536K     209K  com.qti.diagservices
+12808     7092K    2344K    1578K    1536K       0K       0K       0K       0K  procrank
+ 7943    24912K    3004K    1523K    1424K      96K      94K      92K      27K  /vendor/bin/hw/wpa_supplicant
+  940    53028K    3600K    1518K    1328K     828K     828K     828K     238K  /system/bin/mediaserver
+  931    22116K    3136K    1505K    1440K     296K     284K     272K      81K  media.metrics
+  885  1005420K   19756K    1482K     700K    8964K    3489K    3152K    1005K  zygote
+ 1025    17800K    2776K    1458K    1384K       0K       0K       0K       0K  /system/vendor/bin/imsrcsd
+  888    30272K    3132K    1419K    1332K     772K     762K     752K     219K  /system/bin/cameraserver
+ 1018    96780K    2668K    1344K    1304K     712K     694K     676K     199K  /system/vendor/bin/netmgrd
+  597    21844K    3124K    1341K    1172K     908K     902K     896K     259K  /vendor/bin/hw/android.hardware.graphics.composer@2.1-service
+ 3898  1084416K   16944K    1320K     776K    6740K    1372K    1104K     395K  com.evenwell.customerfeedback
+  329     3488K    1348K    1234K    1128K      56K      56K      56K      16K  /sbin/ueventd
+  604    10396K    2300K    1109K    1076K     112K     110K     108K      31K  /vendor/bin/hw/android.hardware.wifi@1.0-service
+  518    11680K    1940K    1052K    1024K     312K     308K     304K      88K  /system/bin/logd
+  872    52424K    3724K    1040K     884K    2692K    2632K    2572K     758K  /system/vendor/bin/cnd
+  879    55328K    2192K    1000K     972K     464K     462K     460K     133K  /system/vendor/bin/thermal-engine
+    1    15520K    1164K     966K     852K     896K     896K     896K     258K  /init
+  884     7396K    1692K     861K     852K       0K       0K       0K       0K  /system/vendor/bin/adsprpcd
+  877    13800K    1848K     843K     824K       4K       4K       4K       1K  /system/vendor/bin/time_daemon
+ 1003    20752K    2068K     839K     808K     596K     596K     596K     171K  /system/vendor/bin/imsdatadaemon
+  905    10548K    1980K     799K     776K       0K       0K       0K       0K  /system/bin/mediadrmserver
+  874     7740K    1720K     795K     772K       0K       0K       0K       0K  /system/vendor/bin/cnss_diag
+  989    17860K    1816K     793K     768K     220K     220K     220K      63K  /system/vendor/bin/imsqmidaemon
+  955    11500K    1808K     746K     720K     124K     118K     112K      33K  /system/bin/storaged
+  997    14352K    1872K     734K     716K     176K     176K     176K      50K  /system/vendor/bin/ipacm
+  969    10164K    1876K     731K     692K       0K       0K       0K       0K  /system/bin/gatekeeperd
+  520     9000K    1880K     723K     672K     296K     296K     296K      85K  /system/bin/hwservicemanager
+12780     8356K     764K     711K     708K       0K       0K       0K       0K  /system/bin/adbd
+  593    19248K    2376K     711K     624K     688K     682K     676K     196K  /vendor/bin/hw/android.hardware.camera.provider@2.4-service
+  621    12904K    1800K     693K     664K       0K       0K       0K       0K  /system/vendor/bin/pm-service
+ 1014    11944K    1684K     692K     672K     264K     258K     252K      74K  /system/vendor/bin/qti
+  643    18200K    1656K     690K     452K       0K       0K       0K       0K  /vendor/bin/qseecomd
+  631     9076K    1776K     683K     644K       8K       8K       8K       2K  /system/bin/thermalserviced
+  891    15068K    1756K     683K     660K     508K     504K     500K     145K  /system/bin/installd
+  628     4936K    1460K     681K     672K       0K       0K       0K       0K  /system/bin/lmkd
+  892    11652K    1836K     675K     632K     260K     256K     252K      73K  /system/bin/keystore
+  613     8640K    1760K     668K     604K       0K       0K       0K       0K  /system/bin/healthd
+  957    34260K    1952K     647K     616K     312K     308K     304K      88K  /system/bin/wificond
+  952    23688K    1892K     641K     600K     432K     430K     428K     123K  /system/bin/netd
+  606     7504K    1760K     635K     616K       0K       0K       0K       0K  /vendor/bin/hw/vendor.qti.esepowermanager@1.0-service
+  599     8032K    1832K     613K     552K      56K      56K      56K      16K  /vendor/bin/hw/android.hardware.light@2.0-service
+  610    14172K    1816K     598K     560K     288K     284K     280K      81K  /vendor/bin/hw/vendor.qti.hardware.perf@1.0-service
+  608    10600K    1728K     598K     580K       8K       8K       8K       2K  /vendor/bin/hw/vendor.qti.hardware.factory@1.0-service
+  607     7424K    1716K     597K     580K       0K       0K       0K       0K  /vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
+  677    15408K    1628K     593K     564K     304K     304K     304K      87K  /vendor/bin/sensors.qcom
+  602     7460K    1756K     578K     532K       0K       0K       0K       0K  /vendor/bin/hw/android.hardware.thermal@1.0-service
+  603     7456K    1732K     578K     536K       0K       0K       0K       0K  /vendor/bin/hw/android.hardware.vibrator@1.0-service
+  600     7448K    1752K     574K     532K       0K       0K       0K       0K  /vendor/bin/hw/android.hardware.memtrack@1.0-service
+  519     5736K    1412K     562K     544K      28K      26K      24K       7K  /system/bin/servicemanager
+  591     7408K    1596K     552K     524K       0K       0K       0K       0K  /system/bin/hw/android.hidl.allocator@1.0-service
+  530    47920K    1792K     526K     480K     796K     790K     784K     227K  /system/bin/vold
+  594     9256K    1784K     523K     492K      72K      72K      72K      20K  /vendor/bin/hw/android.hardware.cas@1.0-service
+  618     5580K    1420K     518K     504K       4K       4K       4K       1K  /vendor/bin/tftp_server
+  668    10088K    1536K     509K     488K       0K       0K       0K       0K  /system/vendor/bin/pm-proxy
+  616    11400K    1420K     504K     488K       0K       0K       0K       0K  /vendor/bin/rmt_storage
+  611     9572K    1616K     495K     476K     188K     188K     188K      54K  /vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
+  598     7432K    1644K     483K     420K     104K     104K     104K      29K  /vendor/bin/hw/android.hardware.health@1.0-service
+  620     8020K    1780K     472K     232K       4K       4K       4K       1K  /vendor/bin/qseecomd
+  658     4592K    1136K     459K     452K       0K       0K       0K       0K  /system/bin/sh
+  687     9284K    1328K     451K     440K     108K     106K     104K      30K  /system/bin/pandoraservice
+  635     8592K    1312K     446K     436K       0K       0K       0K       0K  /vendor/bin/mmid
+  973     4772K    1148K     443K     436K       0K       0K       0K       0K  /system/bin/tombstoned
+  529     8508K    1616K     437K     408K     204K     204K     204K      58K  /vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
+  592     9648K    1588K     409K     388K     308K     306K     304K      88K  /vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
+  528     8372K    1564K     407K     368K     220K     218K     216K      62K  /vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
+  596    12464K    1740K     390K     344K     288K     286K     284K      82K  /vendor/bin/hw/android.hardware.graphics.allocator@2.0-service
+  595     8604K    1556K     348K     316K     228K     226K     224K      65K  /vendor/bin/hw/android.hardware.configstore@1.0-service
+  601     9528K    1536K     343K     296K     316K     316K     316K      91K  /vendor/bin/hw/android.hardware.power@1.0-service
+  521     5560K    1200K     327K     316K     196K     194K     192K      55K  /vendor/bin/vndservicemanager
+  971     5000K    1000K     327K     320K     180K     180K     180K      51K  /system/bin/ip6tables-restore
+  882     8300K    1316K     322K     304K     436K     434K     432K     125K  /system/vendor/bin/wcnss_service
+  963     6740K    1232K     320K     288K     188K     186K     184K      53K  /system/vendor/bin/loc_launcher
+  970     4992K     948K     275K     268K     224K     220K     216K      63K  /system/bin/iptables-restore
+                           ------   ------   ------   ------   ------   ------  ------
+                          380590K  318704K  250580K   94694K   87328K   27284K  TOTAL
+
+ZRAM: 29068K physical used for 100884K in swap (991224K total swap)
+ RAM: 871944K total, 25128K free, 908K buffers, 186708K cached, 1416K shmem, 194824K slab

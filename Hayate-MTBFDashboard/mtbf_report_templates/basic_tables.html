@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Testcase detail</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="Modern Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design"/>
+    <script type="application/x-javascript"> addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+    }, false);
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    } </script>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel='stylesheet' type='text/css'/>
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel='stylesheet' type='text/css'/>
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!----webfonts--->
+    <link href='http://fonts.useso.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+    <!---//webfonts--->
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="wrapper">
+    <!-- Navigation -->
+    <nav class="top1 navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <a class="navbar-brand">Testcase '{{ testcaseName }}' execute detail</a>
+        </div>
+        <div class="navbar-default sidebar" role="navigation">
+            <div class="sidebar-nav navbar-collapse">
+                <ul class="nav" id="side-menu">
+                    <li>
+                        <a href="dashboard.html"><i class="fa fa-dashboard fa-fw nav_icon"></i>Dashboard</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.sidebar-collapse -->
+        </div>
+        <!-- /.navbar-static-side -->
+    </nav>
+    <div id="page-wrapper">
+        <div class="col-md-12 graphs">
+            <div class="xs">
+                <div class="bs-example4" data-example-id="simple-responsive-table">
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover">
+                            <thead>
+                            <tr>
+                                <th style="background-color: #00bcd4">Loop</th>
+                                <th style="background-color: tomato">Round</th>
+                                <th style="background-color: #78cd51">Name</th>
+                                <th style="background-color: #d43f3a">Related device</th>
+                                <th style="background-color: pink">Result</th>
+                                <th style="background-color: tan">OK info</th>
+                                <th style="background-color: sienna">Error info</th>
+                                <th style="background-color: orange">Start time</th>
+                                <th style="background-color: lightseagreen">End time</th>
+                                <th style="background-color: lightslategray">Logcat</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% for script in scripts %}
+                            <tr {% if script.result == 'OK' %} class="success" {% else %} class="danger" {% endif %}>
+                                <td>{{ script.loop }}</td>
+                                <td>{{ script.round }}</td>
+                                <td>{{ script.name }}</td>
+                                <td>{{ script.relatedDevice }}</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <a id="{{ script.startTime }}" data-toggle="dropdown">
+                                            {{ script.result }}
+                                            <span class="caret"></span>
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="{{ script.startTime }}">
+                                            {% for step in script.steps  %}
+                                                <li><a>{{ step.content }}</a><a>{{ step.result }}</a></li>
+                                                <li role="separator" class="divider"></li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                </td>
+                                <td>{{ script.OKInfo }}</td>
+                                <td>{{ script.ErrorInfo }}</td>
+                                <td>{{ script.startTime }}</td>
+                                <td>{{ script.endTime }}</td>
+                                <td><a href="logcat\{{  script.relatedDevice }}\{{ script.round }}\{{ script.name }}\{{ script.logFolder }}">{{ script.logFolder }}</a></td>
+                            </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- /.table-responsive -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-wrapper -->
+</div>
+<!-- /#wrapper -->
+<!-- Nav CSS -->
+<link href="css/custom.css" rel="stylesheet">
+<!-- Metis Menu Plugin JavaScript -->
+<script src="js/metisMenu.min.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>

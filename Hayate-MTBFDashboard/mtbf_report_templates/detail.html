@@ -1,0 +1,50 @@
+<html>
+<head>
+    <title>TS MTBF Dashboard</title>
+    <link media="screen" type="text/css" href="style1.css" rel="stylesheet">
+</head>
+<body>
+    <div class="Main">
+        <div class="Sheet">
+            <h1 class="logo-name" id="name-text">TS MTBF Detail</h1>
+            <h2> {{ device.all_error }} Errors/Warnings exist </h2>
+            <h3> Test for {{ device.timeDuration }} hours </h3>
+            <br>
+            <br>
+            <table>
+                <thead>
+                    <tr>
+                        <th>&emsp;</th>
+                        <th colspan="8">Detail</th>
+                    </tr>
+                    <tr>
+                        <th>UDID</th>
+                        <th>Type</th>
+                        <th>Process</th>
+                        <th>Packages</th>
+                        <th>Brief Error</th>
+                        <th>Happen Time</th>
+                        <th>Log</th>
+                        <th>Relate logcat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for error in device.errors %}
+                        <tr class="out" onmouseout="this.className='out'" onmouseover="this.className='over'">
+                            <td class="numeric_cell">{{ device.id }}</td>
+                            <td class="numeric_cell">{{ error.type }}</td>
+                            <td class="numeric_cell">{{ error.process }}</td>
+                            <td class="numeric_cell">{{ error.package }}</td>
+                            <td class="numeric_cell">{{ error.briefError }}</td>
+                            <td class="numeric_cell">{{ error.happen_time }}</td>
+                            <td class="numeric_cell"><a href="{{ error.log }}">Detail</a></td>
+                            <td class="numeric_cell"><a href="{{ error.logcatFolder }}">Logcat</a></td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <p>{{ info }}</p>
+</body>
+</html>

@@ -1,0 +1,51 @@
+__author__ = 'thundersoft'
+
+import os
+
+CONFIG_XML_FILE = os.path.join(os.path.dirname(__file__),'ParserConfig','MultDevicesPBConfig.xml')
+CONFI_XML_TEST_REPORT_PATH = os.path.join(os.path.dirname(__file__),'RecordMTBFTestCaseResult.{time}')
+CONFIG_XML_TAG_DEVICE = 'Device'
+CONFIG_XML_TAG_SUPPORTDEVICES = 'SupportDevices'
+CONFIG_XML_TAG_SUPPORTDEVICE = 'SupportDevice'
+CONFIG_XML_TAG_SCRIPTS = 'Scripts'
+CONFIG_XML_TAG_SCRIPT = 'Script'
+CONFIG_XML_TAG_PATH = 'path'
+CONFIG_XML_TAG_LOOP = 'loop'
+CONFIG_XML_TAG_UDID = 'udid'
+CONFIG_XML_TAG_MAPPINGID = 'mappingid'
+CONFIG_XML_TAG_LOGSTOREPATH = 'logStorePath'
+CONFIG_XML_TAG_MODEL= 'model'
+CONFIG_XML_TAG_DRIVER = 'driverByTime'
+CONFIG_XML_TAG_TIME = 'value'
+CONFIG_XML_TAG_PORT = 'port'
+CONFIG_XML_TAG_TCP = 'tcp'
+CONFIG_XML_TAG_BOOTSTRAPPORT = 'bootstrapPort'
+CONFIG_XML_TAG_RELIANTDEVICE = 'reliantDevice'
+
+CONFIG_TCP_PORT = 8998
+
+folders = os.path._abspath_split(__file__)
+CONFIG_NODE_EXE = os.path.join(folders[1]+'\\',folders[2][0],'node.exe')
+CONFIG_NODE_APPIUM = os.path.join(folders[1]+'\\',folders[2][0],'node_modules','appium','bin','appium.js')
+
+RECORD_XML_NAME = 'Record.xml'
+RECORD_XML_TAG_DEVICE = 'Device'
+RECORD_XML_DEVICE_ATTRIBUTE_ID = 'udid'
+RECORD_XML_DEVICE_ATTRUBUTE_MAPPINGID = 'mappingudid'
+RECORD_XML_TAG_SCRIPT = 'Script'
+RECORD_XML_SCRIPT_ATTRIBUTE_NAME = 'name'
+RECORD_XML_SCRIPT_ATTRIBUTE_STARTTIME = 'startTime'
+RECORD_XML_SCRIPT_ATTRIBUTE_ENDTIME = 'endTime'
+RECORD_XML_SCRIPT_ATTRIBUTE_LOOP = 'loop'
+RECORD_XML_SCRIPT_ATTRIBUTE_ROUND = 'round'
+RECORD_XML_TAG_SCRIPTSTEP = 'Step'
+RECORD_XML_SCRIPTSTEP_ATTRIBUTE_CONTENT = 'content'
+RECORD_XML_SCRIPTSTEP_ATTRIBUTE_RESULT = 'stepResult'
+RECORD_XML_SCRIPTSTEP_ATTRIBUTE_DEVICE = 'relatedDevice'
+RECORD_XML_TAG_SCRIPTRESULT = 'Result'
+RECORD_XML_SCRIPTRESULT_ATTRIBUTE_VALUE = 'value'
+RECORD_XML_TAG_LOG = 'Log'
+RECORD_XML_LOG_ATTRIBUTE_FOLDER = 'folder'
+RECORD_XML_TAG_OKINFO = 'OKInfo'
+RECORD_XML_TAG_ERROR_INFO = 'ErrorInfo'
+

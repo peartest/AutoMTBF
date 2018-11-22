@@ -1,0 +1,64 @@
+<html>
+<head>
+    <title>TS MTBF Dashboard</title>
+    <link media="screen" type="text/css" href="style1.css" rel="stylesheet">
+</head>
+<body>
+    <div class="Main">
+        <div class="Sheet">
+            <h1 class="logo-name" id="name-text">TS MTBF Dashboard</h1>
+            <br>
+            <br>
+            <table>
+                <thead>
+                    <tr>
+                        <th>&emsp;</th>
+                        <th colspan="14">Errors</th>
+                    </tr>
+                    <tr>
+                        <th>UDID</th>
+                        <th>All</th>
+                        <th>App Crash</th>
+                        <th>Native Crash</th>
+                        <th>ANR</th>
+                        <th>WTF</th>
+                        <th>Strict Mode Violation</th>
+                        <th>Low Memory</th>
+                        <th>Watch Dog</th>
+                        <th>Battery Discharge</th>
+                        <th>System Restart</th>
+                        <th>System Boot</th>
+                        <th>Kernel Panic</th>
+                        <th>System Recovery</th>
+                        <th>Tombstones</th>
+                        <th>Detail</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for device in devices %}
+                        <tr class="out" onmouseout="this.className='out'" onmouseover="this.className='over'">
+                            <td class="numeric_cell">{{ device.id}}</td>
+                            <td class="numeric_cell">{{ device.all_error }}</td>
+                            <td class="numeric_cell">{{ device.app_crash }}</td>
+                            <td class="numeric_cell">{{ device.native_crash }}</td>
+                            <td class="numeric_cell">{{ device.anr }}</td>
+                            <td class="numeric_cell">{{ device.wtf }}</td>
+                            <td class="numeric_cell">{{ device.strict_mode_violation }}</td>
+                            <td class="numeric_cell">{{ device.low_memory }}</td>
+                            <td class="numeric_cell">{{ device.watch_dog }}</td>
+                            <td class="numeric_cell">{{ device.battery_discharge }}</td>
+                            <td class="numeric_cell">{{ device.system_restart }}</td>
+                            <td class="numeric_cell">{{ device.system_boot }}</td>
+                            <td class="numeric_cell">{{ device.kernel_panic }}</td>
+                            <td class="numeric_cell">{{ device.system_recovery }}</td>
+                            <td class="numeric_cell">{{ device.tombstones }}</td>
+                            <td class="numeric_cell"><a href="{{ device.detailHtmlPage }}">Detail</a></td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <p>{{ info }}</p>
+</body>
+</html>
