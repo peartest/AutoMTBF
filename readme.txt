@@ -1,17 +1,16 @@
 ==================MTBF============================
-Èç¹ûÄãÒªÊ¹ÓÃTSRunner ½øĞĞMTBF²âÊÔ£¬²¢»ñÈ¡ÏàÓ¦µÄ²âÊÔÊı¾İ£¬Çë°²×°MTBF½Å±¾±àĞ´¹æÔò½øĞĞ±àĞ´
+å¦‚æœä½ è¦ä½¿ç”¨TSRunner è¿›è¡ŒMTBFæµ‹è¯•ï¼Œå¹¶è·å–ç›¸åº”çš„æµ‹è¯•æ•°æ®ï¼Œè¯·å®‰è£…MTBFè„šæœ¬ç¼–å†™è§„åˆ™è¿›è¡Œç¼–å†™
 
-----------------------------------------------MTBF½Å±¾Ä£°å---------------------------------------------------
+----------------------------------------------MTBFè„šæœ¬æ¨¡æ¿---------------------------------------------------
 # -*- coding: utf-8 -*-
-__author__ = 'ÕÔ¼Î¿¡'
 
 # Import actions library
 from Sagittarium.basicaction import BasicAction
 import sys
 
 def script():
-    # Xpath:¾ø¶ÔÂ·¾¶±ê×¢¿Ø¼ş
-    # ¶ÔÓÚxpathÀ´Ëµ£¬½ÚµãË÷ÒıÊÇ´Ó1¿ªÊ¼£¡
+    # Xpath:ç»å¯¹è·¯å¾„æ ‡æ³¨æ§ä»¶
+    # å¯¹äºxpathæ¥è¯´ï¼ŒèŠ‚ç‚¹ç´¢å¼•æ˜¯ä»1å¼€å§‹ï¼
     basicAction.click_element_by_xpath({'xpath': "/hierarchy/"
                                                  "android.widget.FrameLayout[1]/"
                                                  "android.widget.LinearLayout[1]/"
@@ -21,15 +20,15 @@ def script():
                                                  "android.widget.FrameLayout[1]/"
                                                  "android.widget.Button"})
 
-    # Xpath:Ïà¶ÔÂ·¾¶±ê×¢¿Ø¼ş
-    # ¿Ø¼şËùÓĞÊôĞÔ¾ù¿É±ê×¢¿Ø¼ş£¬ÀıÈçbounds
+    # Xpath:ç›¸å¯¹è·¯å¾„æ ‡æ³¨æ§ä»¶
+    # æ§ä»¶æ‰€æœ‰å±æ€§å‡å¯æ ‡æ³¨æ§ä»¶ï¼Œä¾‹å¦‚bounds
     basicAction.click_element_by_xpath({'xpath': "//*[contains(@bounds,'[540,284][720,401]')]"})
 
 # actions end from here
 
 if __name__ == '__main__':
     '''
-    ²Ù×÷Éè±¸1£¨Ö÷Éè±¸£©
+    æ“ä½œè®¾å¤‡1ï¼ˆä¸»è®¾å¤‡ï¼‰
     '''
     try:
         basicAction = BasicAction(__file__,isMTBFTestCase=True,systemArgs=sys.argv)
@@ -42,7 +41,7 @@ if __name__ == '__main__':
         basicAction.log_end();
         basicAction.script_end();
     '''
-    ²Ù×÷Éè±¸2£¨¸¨ÖúÉè±¸£©
+    æ“ä½œè®¾å¤‡2ï¼ˆè¾…åŠ©è®¾å¤‡ï¼‰
     '''
     try:
         basicAction.script_start(targetDevice=basicAction.supportDevice('SupportDevice1'))
@@ -53,7 +52,7 @@ if __name__ == '__main__':
     finally:
         basicAction.script_end()
     '''
-    ²Ù×÷Éè±¸3£¨¸¨ÖúÉè±¸£©
+    æ“ä½œè®¾å¤‡3ï¼ˆè¾…åŠ©è®¾å¤‡ï¼‰
     '''
     try:
         basicAction.script_start(targetDevice=basicAction.supportDevice('SupportDevice2'))
@@ -64,18 +63,18 @@ if __name__ == '__main__':
     finally:
         basicAction.log_end();
         basicAction.script_end();
-----------------------------------------------MTBF½Å±¾Ä£°å---------------------------------------------------
+----------------------------------------------MTBFè„šæœ¬æ¨¡æ¿---------------------------------------------------
 
-===============================Æô¶¯MTBF²âÊÔ============================================
-1.½Å±¾°´ÕÕMTBFÒªÇóµÄ¸ñÊ½½øĞĞ±àĞ´¡£
-2.ÔÚMultDevicesPBConfig.xmlÖĞ½øĞĞÅäÖÃ¡£
-3.´ò¿ªServer1.bat
-4.´ò¿ªServer2.bat
-5.´ò¿ªPlaybackScript.bat
+===============================å¯åŠ¨MTBFæµ‹è¯•============================================
+1.è„šæœ¬æŒ‰ç…§MTBFè¦æ±‚çš„æ ¼å¼è¿›è¡Œç¼–å†™ã€‚
+2.åœ¨MultDevicesPBConfig.xmlä¸­è¿›è¡Œé…ç½®ã€‚
+3.æ‰“å¼€Server1.bat
+4.æ‰“å¼€Server2.bat
+5.æ‰“å¼€PlaybackScript.bat
 
-==============================»ñÈ¡MTBF²âÊÔ±¨¸æ=========================================
-²âÊÔÍê³Éºó£¬Ê¹ÓÃÒÔÏÂÃüÁîÉú³É²âÊÔ±¨¸æ¡££¨ÃüÁîÖĞµÄ¾ø¶ÔÂ·¾¶ÇëÌæ»»³ÉÄã°²×°Â·¾¶ÏÂµÄ¶ÔÓ¦Â·¾¶£©
+==============================è·å–MTBFæµ‹è¯•æŠ¥å‘Š=========================================
+æµ‹è¯•å®Œæˆåï¼Œä½¿ç”¨ä»¥ä¸‹å‘½ä»¤ç”Ÿæˆæµ‹è¯•æŠ¥å‘Šã€‚ï¼ˆå‘½ä»¤ä¸­çš„ç»å¯¹è·¯å¾„è¯·æ›¿æ¢æˆä½ å®‰è£…è·¯å¾„ä¸‹çš„å¯¹åº”è·¯å¾„ï¼‰
 python E:\TSRunner\MTBF\Hayate-MTBFDashboard\dashboard.py E:\TSRunner\MTBF\Hayate-MTBFServerUtility\RecordMTBFTestCaseResult.20160526165648
 
-"E:\TSRunner\MTBF\Hayate-MTBFServerUtility\RecordMTBFTestCaseResult.20160526165648" ´ËÎÄ¼ş¼ĞÏÂ±£´æÓĞ²âÊÔ¹ı³ÌÖĞµÄÊı¾İ£¬Ã¿´Ë¿ªÆôMTBF²âÊÔ¶¼»áÉú³ÉÕâÖÖÎÄ¼ş¼Ğ¡£
+"E:\TSRunner\MTBF\Hayate-MTBFServerUtility\RecordMTBFTestCaseResult.20160526165648" æ­¤æ–‡ä»¶å¤¹ä¸‹ä¿å­˜æœ‰æµ‹è¯•è¿‡ç¨‹ä¸­çš„æ•°æ®ï¼Œæ¯æ­¤å¼€å¯MTBFæµ‹è¯•éƒ½ä¼šç”Ÿæˆè¿™ç§æ–‡ä»¶å¤¹ã€‚
 
